@@ -8,6 +8,7 @@
                     single-line
                     hide-details
                     @input="filterSearch"
+                    clearable
             ></v-text-field>
         </v-flex>
 
@@ -16,6 +17,7 @@
                     :items="authors"
                     label="Author"
                     @change="filterAuthor"
+                    clearable
             ></v-select>
         </v-flex>
 
