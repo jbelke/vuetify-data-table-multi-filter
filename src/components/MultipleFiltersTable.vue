@@ -7,6 +7,7 @@
                     single-line
                     hide-details
                     @input="filterSearch"
+                    clearable
             ></v-text-field>
         </v-flex>
         <v-flex xs3>
@@ -14,6 +15,7 @@
                     :items="authors"
                     label="Author"
                     @change="filterAuthor"
+                    clearable
             ></v-select>
         </v-flex>
 
@@ -30,6 +32,7 @@
                     offset-y
                     full-width
                     min-width="290px"
+                    clearable
             >
                 <v-text-field
                         slot="activator"
@@ -59,6 +62,7 @@
                     offset-y
                     full-width
                     min-width="290px"
+                    clearable
             >
                 <v-text-field
                         slot="activator"
@@ -90,6 +94,7 @@
                     :hide-actions=true
                     :search="filters"
                     :custom-filter="customFilter"
+                    clearable
             >
                 <template slot="headers" slot-scope="props">
                     <tr>
